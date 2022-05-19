@@ -1,7 +1,6 @@
 radio.onReceivedNumber(function (receivedNumber) {
     if (receivedNumber == 2) {
         Farbe = 1
-        wunsch = 0
     }
 })
 input.onButtonPressed(Button.A, function () {
@@ -23,11 +22,6 @@ basic.forever(function () {
     } else {
         basic.setLedColor(0xff0000)
     }
-    if (wunsch && Farbe == 0) {
-        radio.sendNumber(1)
-        basic.showString("Signal kommt.")
-        basic.pause(0)
-    }
 })
 basic.forever(function () {
     if (Farbe == 1) {
@@ -39,5 +33,13 @@ basic.forever(function () {
         music.setTempo(224)
         music.playTone(131, music.beat(BeatFraction.Quarter))
         music.rest(music.beat(BeatFraction.Breve))
+    }
+})
+basic.forever(function () {
+    if (wunsch && Farbe == 0) {
+        radio.sendNumber(1)
+        basic.showString("kommt")
+        basic.pause(0)
+        wunsch = 0
     }
 })
