@@ -8,10 +8,11 @@ basic.forever(function () {
     if (Farbe == 1) {
         basic.pause(9000)
         Farbe = 0
+        wunsch = 0
     }
     if (wunsch && Farbe == 0) {
         basic.showString("Grün kommt.")
-        basic.pause(4000)
+        basic.pause(2000)
         Farbe = 1
         wunsch = 0
     }
