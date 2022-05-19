@@ -14,6 +14,7 @@ music.setTempo(224)
 radio.setGroup(74)
 basic.forever(function () {
     if (Farbe == 1) {
+        basic.pause(9000)
         basic.setLedColor(0x00ff00)
         basic.pause(9000)
         Farbe = 0
