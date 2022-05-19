@@ -28,7 +28,7 @@ basic.forever(function () {
         music.playTone(784, music.beat(BeatFraction.Whole))
         music.rest(music.beat(BeatFraction.Whole))
     } else {
-        music.setTempo(400)
+        music.setTempo(224)
         music.playTone(131, music.beat(BeatFraction.Quarter))
         music.rest(music.beat(BeatFraction.Breve))
     }
