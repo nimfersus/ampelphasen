@@ -9,4 +9,10 @@ basic.forever(function () {
         basic.pause(9000)
         Farbe = 0
     }
+    if (wunsch && Farbe == 0) {
+        basic.showString("Grün kommt.")
+        basic.pause(4000)
+        Farbe = 1
+        wunsch = 0
+    }
 })
