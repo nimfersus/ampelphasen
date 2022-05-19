@@ -14,7 +14,7 @@ basic.forever(function () {
         basic.setLedColor(0xff0000)
     }
     if (wunsch && Farbe == 0) {
-        basic.showString("Grün kommt.")
+        basic.showString("Signal kommt.")
         basic.pause(2000)
         Farbe = 1
         wunsch = 0
